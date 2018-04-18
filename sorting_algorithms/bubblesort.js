@@ -58,4 +58,18 @@ for(i = 0; i < size; i += 1) {
     }
 }
 
+// 4. Example with single loop
+function swap(arr, i) {
+    arr[i] = arr[i] + arr[i - 1];
+    arr[i - 1] = arr[i] - arr[i - 1];
+    arr[i] = arr[i] - arr[i - 1];
+}
+
+for (i = size; i >= 0; i -= 1) {
+    if (arr[i] < arr[i - 1]) {
+        swap(arr, i);
+        i = size;
+    }
+}
+
 // console.log(arr);
