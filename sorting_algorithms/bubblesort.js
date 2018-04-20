@@ -72,4 +72,14 @@ for (i = size; i >= 0; i -= 1) {
     }
 }
 
+// 5. ES6 example
+const arr = [3, 2, 5, 7, 8, 4, 1, 0, 9, 6], size = arr.length;
+for(let i = 0; i < size; i += 1) {
+    for(let j = i; j > 0; j -= 1) {
+        if(arr[j - 1] > arr[j]) {
+            [arr[j - 1], arr[j]] = [arr[j], arr[j - 1]]
+        }
+    }
+}
+
 // console.log(arr);
