@@ -1,4 +1,4 @@
-/* Bubble sort algorithm
+/* Insertion sort algorithm
 *  Complexity: O(N^2).
 *  @param Array - as input
 *  @return Array - sorted
