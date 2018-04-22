@@ -17,4 +17,4 @@ for(i = 0; i < size; i += 1) {
     arr[j + 1] = temp;
 }
 
-console.log(arr);
+// console.log(arr);
