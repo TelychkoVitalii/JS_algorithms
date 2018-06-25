@@ -1,3 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function HashTable() {
 //     var table = [];
 //     var loseloseHashCode = function (key) {
