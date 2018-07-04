@@ -17,7 +17,7 @@ if ((heightNode(node.left) - heightNode(node.right)) > 1) {
     }
 }
 
-// single right rotation
+
 if ((heightNode(node.right) - heightNode(node.left)) > 1) {
     var rotationLL = function (node) {
         var tmp = node.left;

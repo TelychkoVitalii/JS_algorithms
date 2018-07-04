@@ -1,0 +1,7 @@
+1. Create manifest file with name 'manifest.json'.
+2. Create newtab: newtab.html
+3. Visit chrome://extensions
+4. Turn on Developer Mode
+5. Click Load unpacked extension and select the directory
+6. Publish only ZIP file via 'https://chrome.google.com/webstore/developer/dashboard'
+7. Add more info about your app
