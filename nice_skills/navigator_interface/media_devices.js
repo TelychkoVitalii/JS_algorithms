@@ -7,7 +7,7 @@ navigator.mediaDevices.enumerateDevices()
 
 // Get object of media tracks settings like brightness, volume etc.
 // https://developer.mozilla.org/ru/docs/Web/API/MediaDevices/getSupportedConstraints
-console.log(navigator.mediaDevices.getSupportedConstraints());
+navigator.mediaDevices.getSupportedConstraints();
 
 // The MediaDevices getUserMedia() method prompts the user for permission to use a media input which produces a MediaStream with tracks containing the requested types of media.
 var constraints = {
