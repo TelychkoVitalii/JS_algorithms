@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Channel Messaging</title>
+</head>
+<body>
+<h1>Channel messaging demo</h1>
+<p>Message not yet sent</p>
+
+<form>
+    <label for="message-box">Send a message</label>
+    <input type="text" id="message-box" class="message-box" autofocus>
+    <button>Send Message</button>
+</form>
+
+<iframe src="index2.html" width="480" height="320"></iframe>
+
+<script>
+    var para = document.querySelector('p'),
+        textInput = document.querySelector('.message-box'),
+        button = document.querySelector('button'),
+        ifr = document.querySelector('iframe'),
+        otherWindow = ifr.contentWindow,
+        channel;
+
+    button.addEventListener("click", iframeLoaded, false);
+
+    function iframeLoaded(e) {
+        e.preventDefault();
+        channel = new MessageChannel();
+        otherWindow.postMessage(textInput.value, '*', [channel.port2]);
+        channel.port1.onmessage = handleMessage;
+        function handleMessage(e) {
+            para.innerHTML = e.data;
+            textInput.value = '';
+        }
+    }
+</script>
+</body>
+</html>

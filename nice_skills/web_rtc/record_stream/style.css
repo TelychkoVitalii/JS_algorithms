@@ -1,0 +1,27 @@
+body, #buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 3px 10px 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 140px;
+}
+
+video {
+    height: 232px;
+    margin: 0 12px 20px 0;
+    vertical-align: top;
+    width: calc(20em - 10px);
+}
+
+
+video:last-of-type {
+    margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+    margin: 0 20px 20px 0;
+}
