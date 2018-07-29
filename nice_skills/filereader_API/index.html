@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Image File Uploader</title>
+</head>
+<body>
+
+<div>
+    <h1 class="title">Your Image Uploader</h1>
+    <p class='sub_title'>You can upload your favorite images in any quantity, as well as get detailed information about them. Enjoy!</p>
+    <input type="file" id="uploader" multiple accept="image/*" style='display: none'>
+    <label tabindex="0" for="uploader" id="removeButton">Select a file...</label>
+    <span id="progress"></span>
+
+    <ul class='images'></ul>
+</div>
+
+<script src="js/remove_image.js"></script>
+<script src="js/display_images.js"></script>
+<script src="js/upload_images.js"></script>
+</body>
+</html>

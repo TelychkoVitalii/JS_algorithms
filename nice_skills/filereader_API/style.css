@@ -1,0 +1,56 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.title {
+    padding-top: 40px;
+}
+
+.sub_title {
+    padding: 10px 0 10px 0;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4 , 2fr);
+    width: 93%;
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.images li {
+    list-style-type: none;
+}
+
+.images li img {
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    border: 5px solid black;
+}
+
+#removeButton:hover {
+    cursor: pointer;
+}
+
+#removeButton {
+    background-color: darkorange;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Source Code Pro', monospace;
+    outline: none;
+    padding: 6px 14px;
+    margin-top: 8px;
+}
+
+figcaption p {
+    margin: 5px;
+}
+
+#progress {
+    padding-left: 5px;
+}
