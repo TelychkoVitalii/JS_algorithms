@@ -1,13 +1,33 @@
-var
-    // Store the first HTML5 video element in the document
-    video = document.querySelector('video'),
-    // We use this to time how long things are taking. Not that important..
-    time_dump = document.getElementById("elapsed_time"),
-    // Create a new image that will be our goofy glasses
-    glasses = new Image(),
-    // Store the canvas so we can write to it
-    canvas = document.getElementById("output"),
-    // Get the canvas 2d Context
-    ctx = canvas.getContext("2d");
-// Finally set the source of our new glasses img element
-glasses.src = "i/glasses.png";
+const canvas = document.getElementById('canvas'),
+      ctx = canvas.getContext('2d'),
+      width = 640,
+      height = 480,
+      sample_size = 10,
+      previous_frame = [],
+      threshold = 50;
+
+function capture() {
+    ctx.drawImage(video, 0, 0, width, height);
+    var data = ctx.getImageData(0, 0, width, height).data, y, x;
+
+    for(y = 0; y < height; y += sample_size) {
+        for(x = 0; x < width; x += sample_size) {
+            var pos = (x + y * width) * 4,
+                r = data[pos],
+                g = data[pos],
+                b = data[pos];
+
+            if(previous_frame[pos] && Math.abs(previous_frame[pos] - r) > threshold) {
+                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                ctx.strokeRect(x, y, sample_size, sample_size);
+            }
+
+            previous_frame[pos] = r;
+        }
+    }
+
+}
+
+setInterval(capture, 100);
+
+requestVideo();

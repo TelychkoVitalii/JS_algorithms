@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 // import CreateReactClass from './topics/React.Component/create_react_class';
 // import ComponentES6 from './topics/React.Component/component_es6';
@@ -8,12 +8,15 @@ import './App.css';
 // import FragmentElement from './topics/React.Elements/fragment';
 // import CreateRef from './topics/React.Elements/create_ref';
 // import ForwardRef from './topics/React.Elements/forward_ref';
+// import WrappedComponent from './topics/Reusable_techniques/hoc';
+// import ComponentNeedingStorage from './topics/Reusable_techniques/render_props';
+// import Demo from './topics/Reusable_techniques/compound_components';
 
 class App extends Component {
   render() {
     // const createElementComponent = React.createElement(CreateElement, {toWhat: 'World'}, null);
     return (
-      <div className="App">
+      <Fragment>
         {/*<CreateReactClass />*/}
           {/*<ComponentES6 />*/}
           {/*<PureComponentES6 />*/}
@@ -22,7 +25,10 @@ class App extends Component {
         {/*<FragmentElement />*/}
         {/*<CreateRef />*/}
         {/*<ForwardRef />*/}
-      </div>
+        {/*<WrappedComponent />*/}
+        {/*<ComponentNeedingStorage />*/}
+        {/*<Demo />*/}
+      </Fragment>
     );
   }
 }

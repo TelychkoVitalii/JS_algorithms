@@ -5,23 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML5 Face Detection</title>
+    <title>Motion Detection</title>
 </head>
 <body>
-<div class="wrapper">
-    <h1>HTML5 GLASSES</h1>
-    <p>Created by <a href="http://twitter.com/wesbos" target="_blank">Wes Bos</a>. See full details <a href="">here.</a></p>
-    <!-- Our Main Video Element -->
-    <video height="426" width="640" controls="false">
-    </video>
 
-    <!-- Out Canvas Element for output -->
-    <canvas id="output"  height="426" width="640" ></canvas>
+<video id="video" autoplay></video>
+<canvas id="canvas" width='640px' height='480px'></canvas>
 
-    <!-- div to track progress -->
-    <div id="elapsed_time">Press play for HTML5 Glasses!</div>
-</div>
-<script src="cvv.js"></script>
+<script src="request_video.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
