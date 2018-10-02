@@ -23,7 +23,6 @@ var DecoratedUser = function (user, street, city) {
 };
 
 // logging helper
-
 var log = (function() {
     var log = "";
 
