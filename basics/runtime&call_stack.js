@@ -16,7 +16,7 @@
 
 // Crankshaft translates the JavaScript abstract syntax tree to a
 // high-level static single-assignment (SSA) representation called Hydrogen and
-// tries to optimize that Hydrogen graph. Most optimizations are done at this level.
+// tries to optimize that Hydrogen graph. Most compiler_optimizations are done at this level.
 
 // Once the Hydrogen graph is optimized, Crankshaft lowers it to a lower-level representation called Lithium.
 // Most of the Lithium implementation is architecture-specific. Register allocation happens at this level.
