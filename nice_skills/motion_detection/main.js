@@ -9,7 +9,6 @@ const canvas = document.getElementById('canvas'),
 function capture() {
     ctx.drawImage(video, 0, 0, width, height);
     var data = ctx.getImageData(0, 0, width, height).data, y, x;
-
     for(y = 0; y < height; y += sample_size) {
         for(x = 0; x < width; x += sample_size) {
             var pos = (x + y * width) * 4,
@@ -25,9 +24,7 @@ function capture() {
             previous_frame[pos] = r;
         }
     }
-
 }
 
 setInterval(capture, 100);
-
 requestVideo();
