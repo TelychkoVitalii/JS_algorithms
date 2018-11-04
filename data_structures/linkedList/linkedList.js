@@ -33,6 +33,7 @@ function display() {
         currNode = currNode.next;
     }
 }
+
 function findPrevious(item) {
     var currNode = this.head;
     while (!(currNode.next === null) && (currNode.next.element !== item)) {
@@ -54,4 +55,4 @@ cities.insert('RusselVille', 'Conway');
 cities.insert('Alma', 'RusselVille');
 cities.display();
 cities.find('Alma');
-console.log(cities);
+cities.display();
