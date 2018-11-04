@@ -11,6 +11,8 @@ import './App.css';
 // import WrappedComponent from './topics/Reusable_techniques/hoc';
 // import ComponentNeedingStorage from './topics/Reusable_techniques/render_props';
 // import Demo from './topics/Reusable_techniques/compound_components';
+// import Context from './topics/Reusable_techniques/context';
+// import Container from './topics/Reusable_techniques/another';
 
 class App extends Component {
   render() {
@@ -28,6 +30,8 @@ class App extends Component {
         {/*<WrappedComponent />*/}
         {/*<ComponentNeedingStorage />*/}
         {/*<Demo />*/}
+        {/*<Context />*/}
+        {/*<Container />*/}
       </Fragment>
     );
   }

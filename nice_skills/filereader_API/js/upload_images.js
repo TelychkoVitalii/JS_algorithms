@@ -35,4 +35,4 @@ function uploadImage() {
 
 displayImages(images, imagesList);
 uploader.addEventListener('change', uploadImage, false);
-imagesList.addEventListener('click', removeImage, false);
+// imagesList.addEventListener('click', removeImage, false);
