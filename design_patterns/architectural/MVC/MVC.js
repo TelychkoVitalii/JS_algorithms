@@ -1,3 +1,7 @@
+// Usually the controller instantiates the view and the model in the constructor or, in certain implementations, are injected by the main application class via dependency injection.
+// The relation between a controller and the views could be one to many, so a controller could handle multiple views: the same relationship is valid for the models as well.
+// When we want to scale up this architecture for large projects usually we try to split up these relationships in order to have almost a 1 to 1 relation between these three objects so we can reuse components that are self-contained and architected in the same way the entire application works, like a Russian doll.
+
 // VIEW
 var view = {
     showNumber: function (n) {

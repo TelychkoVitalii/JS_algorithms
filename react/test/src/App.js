@@ -14,7 +14,7 @@ import './App.css';
 // import Context from './topics/Reusable_techniques/context';
 // import Container from './topics/Reusable_techniques/another';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     // const createElementComponent = React.createElement(CreateElement, {toWhat: 'World'}, null);
     return (
@@ -36,5 +36,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

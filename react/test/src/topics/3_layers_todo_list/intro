@@ -1,0 +1,8 @@
+Splitting a Single Page Application into layers has a set of advantages:
+1. a better separation of concerns
+2. the layer implementation can be replaced
+3. the UI layer can be hard to test. By moving the logic to other layers, it becomes easier to test.
+Three main layers:
+1. UI (aka Presentation)
+2. Domain (aka Business)
+3. Data Access
