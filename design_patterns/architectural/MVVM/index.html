@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+</head>
+<body>
+<h3>On one line, we have the firstname and on the other you can enter the lastname. Two entries on the same line are bound to the same model. As a consequence, if you modify one box on one line, the other entry on the same line will update itself because the model will notify that it has changed to all the listeners<h3>
+    Firstname: <input type="text" name = "firstname" id="firstname"> <input type="text" name = "firstname" id="firstname_label"><br>
+    Lastname:  <input type="text" name = "lastname" id="lastname"> <input type="text" name = "lastname" id="lastname_label"><br>
+
+    <script src="./model.js"></script>
+    <script src="./viewmodel.js"></script>
+    <script src="./view.js"></script>
+</body>
+</html>

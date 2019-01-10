@@ -1,2 +1,0 @@
-// CSP - Communicating Sequential Processes
-

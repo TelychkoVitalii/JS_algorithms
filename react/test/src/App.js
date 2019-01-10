@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+
 // import CreateReactClass from './topics/React.Component/create_react_class';
 // import ComponentES6 from './topics/React.Component/component_es6';
 // import PureComponentES6 from './topics/React.Component/pure_component_es6';
@@ -8,14 +8,44 @@ import './App.css';
 // import FragmentElement from './topics/React.Elements/fragment';
 // import CreateRef from './topics/React.Elements/create_ref';
 // import ForwardRef from './topics/React.Elements/forward_ref';
-// import WrappedComponent from './topics/Reusable_techniques/hoc';
-// import ComponentNeedingStorage from './topics/Reusable_techniques/render_props';
-// import Demo from './topics/Reusable_techniques/compound_components';
-// import Context from './topics/Reusable_techniques/context';
-// import Container from './topics/Reusable_techniques/another';
 
-export default class App extends Component {
-  render() {
+// --- React Context API ---
+// import UpdateContextFromNestedComponent from './topics/React.Context/updateContextFromNestedComponent';
+// import ConsumingMultipleContext from './topics/React.Context/consumingMultipleContext';
+
+// --- Anti Patterns ---
+// import { PropDrilling } from "./topics/React.AntiPatterns/PropDrilling";
+
+// --- Render Props ---
+// import BasicExample from './topics/React.RenderProps/BasicExample';
+// import RenderWithinComponent from './topics/React.RenderProps/RenderWithinComponent';
+// import LiftingState from './topics/React.RenderProps/LiftingState';
+// import ComponentComposition from './topics/React.RenderProps/ComponentComposition';
+// import RenderPropPattern from './topics/React.RenderProps/RenderPropPattern';
+// import SlotPattern from './topics/React.RenderProps/SlotPattern';
+
+// --- HOC ---
+// import BasicExample from './topics/React.HOC/BasicExample';
+// import PropsProxyHOC from './topics/React.HOC/PropsProxy';
+// import ControlledInputAbstraction from './topics/React.HOC/ControlledInputAbstraction';
+// import InheritanceInversion from './topics/React.HOC/InheritanceInversion';
+// import NamingCaseStudies from './topics/React.HOC/NamingCaseStudies';
+// import CompositionOfHOCs from './topics/React.HOC/CompositionOfHOCs';
+
+// --- Compound Components ---
+// import BasicExample from './topics/React.CompoundComponents/BasicExample';
+// import ChatExample from './topics/React.CompoundComponents/Chat';
+
+// --- Reusable UI ---
+// import AdvancedForms from './topics/React.ReusableUI/AdvancedForms';
+
+// --- React Children ---
+// import BasicExample from './topics/React.Children/BasicExample';
+// import FunctionAsChild from './topics/React.Children/FunctionAsChild';
+// import ChildrenManipulating from './topics/React.Children/ChildrenManipulating';
+// import ChildrenEditing from './topics/React.Children/ChildrenEditing';
+
+export default function App() {
     // const createElementComponent = React.createElement(CreateElement, {toWhat: 'World'}, null);
     return (
       <Fragment>
@@ -27,12 +57,43 @@ export default class App extends Component {
         {/*<FragmentElement />*/}
         {/*<CreateRef />*/}
         {/*<ForwardRef />*/}
-        {/*<WrappedComponent />*/}
-        {/*<ComponentNeedingStorage />*/}
-        {/*<Demo />*/}
-        {/*<Context />*/}
         {/*<Container />*/}
+
+        {/* --- AntiPatterns --- */}
+        {/*<PropDrilling />*/}
+
+        {/* React Context API */}
+        {/*<UpdateContextFromNestedComponent />*/}
+        {/*<ConsumingMultipleContext />*/}
+
+        {/* --- HOC --- */}
+        {/*<BasicExample />*/}
+        {/*<PropsProxyHOC />*/}
+        {/*<ControlledInputAbstraction />*/}
+        {/*<InheritanceInversion />*/}
+        {/*<NamingCaseStudies />*/}
+        {/*<CompositionOfHOCs />*/}
+
+        {/*--- Render Props ---*/}
+        {/*<BasicExample />*/}
+        {/*<RenderWithinComponent />*/}
+        {/*<LiftingState />*/}
+        {/*<ComponentComposition />*/}
+        {/*<RenderPropPattern />*/}
+        {/*<SlotPattern />*/}
+
+        {/*--- Compound Components ---*/}
+        {/*<BasicExample />*/}
+        {/*<ChatExample />*/}
+
+        {/*--- Reusable UI ---*/}
+        {/*<AdvancedForms />*/}
+
+        {/*--- React Children ---*/}
+        {/*<BasicExample />*/}
+        {/*<FunctionAsChild />*/}
+        {/*<ChildrenManipulating />*/}
+        {/*<ChildrenEditing />*/}
       </Fragment>
     );
-  }
 }

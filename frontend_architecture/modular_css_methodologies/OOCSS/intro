@@ -1,0 +1,10 @@
+OOCSS stands for object-oriented CSS. This approach has two main ideas:
+
+Separation of structure and design
+Separation of container and content
+Using this structure, the developer obtains general classes that can be used in different places.
+
+At this step, there are two pieces of news (as usual, good and bad):
+
+Good: reducing the amount of code by reusing it (DRY principle).
+Bad: complex support. When you change the style of a particular element, you will most likely have to change not only CSS (because most classes are common), but also add classes to the markup.

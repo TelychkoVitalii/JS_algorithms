@@ -1,0 +1,4 @@
+The main differences between MVP and MVC could be summarized in the following list:
+Having a presenter instead of a controller, we will see in a moment which benefits come in with a presenter.
+The relation between a view and a presenter is not 1 to many like in MVC but is always 1 to 1.
+The best MVP implementation for having reusable components is when we design our views as passive views because swapping them becomes easier as long the contract between the presenter and the view is respected.

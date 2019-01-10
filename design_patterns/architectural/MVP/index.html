@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVP Example</title>
+</head>
+<body>
+<script>
+  // MODEL
+  function TaskModel(text){
+    var ID = (new Date()).getTime(), Text = text;
+    this.getID = function(){
+      return ID;
+    };
+    this.getText = function(){
+      return Text;
+    };
+    this.setText = function(value){
+      Text = value;
+    }
+  }
+
+  // VIEW
+  function TaskView(){
+    var html = document.body,
+        input = document.createElement('input'),
+        label = document.createElement('label');
+        div = document.createElement('div');
+    input.setAttribute('type', 'checkbox');
+    function init(){
+      div.appendChild(input);
+      div.appendChild(label);
+      html.appendChild(div);
+    }
+
+    var public_api = {
+      getHtml: function(){
+        return div;
+      },
+      setModel: function(model) {
+        input.setAttribute('id', model.getID());
+        label.setAttribute('for', model.getID());
+        label.innerText = model.getText();
+      },
+      addCheckedHandler: function(handler){
+        input.addEventListener('click', handler);
+      },
+      remove: function(){
+        div.remove();
+      }
+    };
+
+    init();
+    return public_api;
+  }
+
+  // PRESENTER
+  function TaskPresenter(_view){
+    var view, model;
+
+    function init() {
+      view = _view;
+      view.addCheckedHandler(function(){
+        view.remove();
+      });
+    }
+
+    var public_api = {
+      getView: function(){
+        return view;
+      },
+      setModel: function(_model){
+        model = _model;
+        view.setModel(model);
+      }
+    };
+
+    init();
+    return public_api;
+  }
+
+
+  // INIT
+  var model = new TaskModel("Hello world!"),
+      task = new TaskPresenter(new TaskView());
+
+  task.setModel(model);
+  document.body.appendChild(task.getView().getHtml());
+</script>
+</body>
+</html>

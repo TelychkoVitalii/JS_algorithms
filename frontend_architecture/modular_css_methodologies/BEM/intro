@@ -1,0 +1,8 @@
+BEM is the third methodology we are going to look at, and is on the other side of the spectrum from SMACSS. BEM is simply a class naming convention. Instead of dictating the structure of your CSS, it only suggests that every element is labeled with a class that describes the following:
+
+Block
+The name of the parent component
+Element
+The name of the element inside of the block
+Modifier
+Any modifier associated with the block or element

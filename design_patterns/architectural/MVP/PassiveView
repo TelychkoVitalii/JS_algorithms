@@ -1,0 +1,3 @@
+Although a common implementation of a Passive View is for the view to implement an interface, there are variations on it, including the use of events that can decouple the View from the Presenter a little more.
+As we don’t have the interface construct in JavaScript, we’re using more a protocol than an explicit interface here.
+It’s technically still an API, and it’s probably fair for us to refer to it as an interface from that perspective.

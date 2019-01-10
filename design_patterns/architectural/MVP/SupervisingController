@@ -1,0 +1,2 @@
+There is also a Supervising Controller variation of MVP, which is closer to the MVC and MVVM patterns, as it provides data-binding from the Model directly from the View.
+Key-value observing (KVO) plug-ins (such as Derick Bailey’s Backbone.ModelBinding plug-in) tend to bring Backbone out of the Passive View and more into the Supervising Controller or MVVM variations.
