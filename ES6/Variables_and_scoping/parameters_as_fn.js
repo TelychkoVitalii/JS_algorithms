@@ -41,6 +41,3 @@
 //   console.log(func()); // outer
 // }
 // bar();
-
-let a = 5;
-console.log(window);
