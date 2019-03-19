@@ -5,7 +5,7 @@ function Set() {
     this.size = size;
     this.union = union;
     this.intersect = intersect;
-    this.subset = subset;
+    // this.subset = subset;
     this.difference = difference;
     this.show = show;
 }
@@ -30,11 +30,7 @@ function remove(data) {
 }
 
 function contains(data) {
-    if(this.dataStore.indexOf(data) > - 1) {
-        return true;
-    } else {
-        return false;
-    }
+    return this.dataStore.indexOf(data) > -1;
 }
 
 function union(set) {

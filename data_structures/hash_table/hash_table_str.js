@@ -55,32 +55,6 @@ for(i = 0; i < size; i += 1) {
 
 hashTable.showDistro();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function HashTable() {
 //     var table = [];
 //     var loseloseHashCode = function (key) {
