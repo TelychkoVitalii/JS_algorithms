@@ -33,5 +33,5 @@ An object is iterable if it has a method whose key is the symbol (stored in) Sym
 */
 
 // converting to boolean/string via Boolean/String
-// const num = Symbol('123');
+  // const num = Symbol('123');
 // console.log(+num); // no numbers

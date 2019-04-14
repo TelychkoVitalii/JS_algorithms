@@ -4,7 +4,7 @@
 // // The optional parameter is a descriptive string that is shown when printing the symbol
 // console.log(typeof mySymbol);
 
-// 1. unique property keys - never clashes with other properies
+// 1. unique property keys - never clashes with other properties
 
 // const iterableObject = {
 //   [Symbol.iterator]() {}
