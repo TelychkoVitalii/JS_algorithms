@@ -10,13 +10,14 @@ By considering the terms in the Fibonacci sequence whose values do not exceed nt
 // function fiboEvenSum(n) {
 //   var fib = [], i, j, sum = 0;
 //   fib[0] = 1;
+//   if(fib[0] % 2 === 0) sum += fib[0];
 //   fib[1] = 2;
+//   if(fib[1] % 2 === 0) sum += fib[1];
 //   for(i = 2; i <= n; i += 1) {
 //     fib[i] = fib[i - 2] + fib[i - 1];
+//     if(fib[i] % 2 === 0) sum += fib[i];
 //   }
-//   for(j = 0; j < fib.length; j += 1) {
-//     if(fib[j] % 2 === 0) sum += fib[j];
-//   }
+//
 //   return sum;
 // }
 //
