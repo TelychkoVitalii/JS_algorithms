@@ -9,9 +9,7 @@ Return the final result in an array, with only the door number included in the a
 
 */
 
-// var doors = [];
-//
-// function getFinalOpenedDoors(numDoors, step) {
+// function getFinalOpenedDoors(numDoors, step, doors) {
 //   var i, j;
 //   if(step > numDoors) {
 //     return doors.reduce((acc, curr, index) => {
@@ -22,7 +20,8 @@ Return the final result in an array, with only the door number included in the a
 //
 //   if(step === 1) for(i = 0; i < numDoors + 1; i += 1) doors.push(true);
 //   else for(j = 0; j <= doors.length; j += step) doors[j] = !doors[j];
-//   return getFinalOpenedDoors(numDoors, step + 1);
+//   return getFinalOpenedDoors(numDoors, step + 1, doors);
 // }
 //
-// getFinalOpenedDoors(100, 1);
+// getFinalOpenedDoors(100, 1, []);
+

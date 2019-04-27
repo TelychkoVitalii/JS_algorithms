@@ -37,14 +37,14 @@ Example outputs (strings):
 */
 
 
-function solve24(numStr) {
-  var array = numStr.split('').map(Number), tf = 24, i;
-  for(i = 0; i < array.length; i += 1) {
-    if(array[i]) {
-      array.splice(i, 1);
-    }
-  }
-  console.log(array);
-}
-
-solve24('4878');
+// function solve24(numStr) {
+//   var array = numStr.split('').map(Number), tf = 24, i;
+//   for(i = 0; i < array.length; i += 1) {
+//     if(array[i]) {
+//       array.splice(i, 1);
+//     }
+//   }
+//   console.log(array);
+// }
+//
+// solve24('4878');

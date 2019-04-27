@@ -50,15 +50,15 @@ What is the largest prime factor of the given number?
 
 // --- FreeCodeCamp Solution ---
 // function largestPrimeFactor(number) {
-//   let prime = 2, max = 1;
-//   while (prime <= number){
+//   let prime = 2, max = 0;
+//   while (prime <= number) {
 //     if (number % prime === 0) {
 //       max = prime;
-//       number = number/prime;
+//       number = number / prime;
 //     }
-//     else prime++;
+//     else prime += 1;
 //   }
 //   return max;
 // }
 //
-// largestPrimeFactor(13195);
+// largestPrimeFactor(600851475143);
